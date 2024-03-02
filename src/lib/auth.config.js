@@ -20,6 +20,8 @@ export const authConfig = {
       return session;
     },
     authorized({ auth, request }) {
+      console.log("Inside authorization");
+      console.log(auth, request);
       const user = auth?.user;
       const isAuthenticated = !!user; // Check if user is authenticated based on their existence
       const isOnAdminPage = request.nextUrl?.pathname.startsWith("/admin");
