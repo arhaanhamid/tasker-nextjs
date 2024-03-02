@@ -1,9 +1,6 @@
-import { Badge } from "@/components/ui/badge";
-import { labels, statuses, priorities } from "./tagData";
 import SelectCell from "./SelectCell";
 import TextCell from "./TextCell";
 import DateCell from "./DateCell";
-import { getUser } from "@/lib/data";
 
 export const columns = [
   {

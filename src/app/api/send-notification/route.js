@@ -8,7 +8,7 @@ require("es6-promise").polyfill();
 
 export const maxDuration = 60;
 
-export const GET = async (req, res) => {
+export const GET = async () => {
   // We only allow POST requests
   //   if (req.method !== "POST") {
   //     res.status(405).json({ message: "Method Not Allowed" });

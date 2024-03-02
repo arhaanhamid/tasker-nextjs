@@ -23,6 +23,9 @@ import { Icons } from "@/components/ui/icons";
 
 export default function DataTableFacetedFilter({ column, title, options }) {
   const facets = column?.getFacetedUniqueValues();
+
+  var Set = require("es6-set");
+
   const selectedValues = new Set(column?.getFilterValue());
 
   return (
