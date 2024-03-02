@@ -1,0 +1,35 @@
+.container{
+
+  position: relative;
+height: 64px;
+}
+
+.footerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  height: 64px;
+  position: absolute;
+  bottom: 0; /* Anchor to bottom */
+  width: 100%; /* Span full width */
+  padding: 0.5rem; /* Add gap (adjust as needed) */
+  /* Other footer styles */
+}
+
+
+.logo{
+  font-weight: bold;
+}
+
+.text{
+  font-size: 12px;
+}
+
+@media (max-width:768px){
+  .container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
