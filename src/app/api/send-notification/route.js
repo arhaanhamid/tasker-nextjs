@@ -6,7 +6,8 @@ import { sendNotificationEmail } from "@/lib/emails/resend-notification";
 import { Promise } from "es6-promise";
 require("es6-promise").polyfill();
 
-export const maxDuration = 60;
+//limitation from VERCEL, can only set 1-10 in hobby
+// export const maxDuration = 60;
 
 export const GET = async () => {
   // We only allow POST requests
