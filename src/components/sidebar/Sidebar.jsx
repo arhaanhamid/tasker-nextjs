@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { handleLogout } from "@/lib/action";
 import { useSession } from "next-auth/react";

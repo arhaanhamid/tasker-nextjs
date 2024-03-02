@@ -1,5 +1,5 @@
 import { client } from "@/trigger";
-import { cronTrigger, eventTrigger, retry } from "@trigger.dev/sdk";
+import { cronTrigger, retry } from "@trigger.dev/sdk";
 
 client.defineJob({
   id: "send-notification",

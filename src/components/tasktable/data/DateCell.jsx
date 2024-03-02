@@ -13,7 +13,6 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { useSession } from "next-auth/react";
-import { PopoverClose } from "@radix-ui/react-popover";
 
 export default function DateCell({ getValue, row, column, table }) {
   const [date, setDate] = React.useState(new Date(getValue()));
