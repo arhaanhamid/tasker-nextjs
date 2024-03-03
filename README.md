@@ -1,76 +1,101 @@
-# Blog Website
+# Tasker - A smooth task management Webapp
 
 ## Preview URL
 
-https://strawhat-adventures.vercel.app/
+https://tasker-nextjs.vercel.app/
 
 ## Description
 
-Welcome to the Blog Website! This project allows users to sign up, create, and share their blog posts. Built with Next.js, React.js, CSS, and MongoDB, it provides a dynamic and interactive platform for users to engage in content creation and consumption.
+Welcome to the Tasker Webapp!  
+
+Never miss a beat!  Tasker is your all-in-one task management solution. Sign up, create tasks, assign them to teammates, and get notified when deadlines approach.  Boost your productivity and stay organized - together.
 
 ## Why?
 
-Blogging is a powerful way to share thoughts, ideas, and experiences. This project aims to provide a user-friendly and feature-rich environment for individuals to express themselves through written content.
+Juggling tasks and deadlines? Tasker tames the chaos.  Collaborate, set reminders, and stay on top of your game - all in one place.  
 
 ## Quick Start
 
 Get the project up and running on your local machine with these steps:  
   
 1. **Clone the repository:**  
-   git clone https://github.com/your-username/blog-website.git  
+   git clone https://github.com/your-username/tasker-nextjs.git  
 
 2. **Navigate to the project folder:**  
-   cd blog-website  
+   tasker-nextjs  
    
 4. **Install dependencies:**  
    npm install  
    
 5. **Set up MongoDB:**  
    Create a MongoDB database and obtain the connection URL.  
-   Create a .env.local file in the root of the project and add your MongoDB connection URL:  
+   Create a .env file in the root of the project and add your MongoDB connection URL:   
    MONGODB_URI=your-mongodb-connection-url  
 
 7. **Setup Providers:**  
-   You will have to manually setup providers like Google/Github/Emailjs. Your .env file should look like something like this  
+   You will have to manually setup providers with OAuth accessibility like Google/Github. You'll need Provider Secret and ID.  
+   Your .env file should look like something like this  
    MONGO_URI=mongodb+srv://joyboy:joyboy1011@cluster0.qsqjfij.mongodb.net/blogdb2?retryWrites=true&w=majority  
 
-  AUTH_SECRET=RANDOM_UNIQUE_SECRET  
+  AUTH_SECRET=RANDOM_UNIQUE_SECRET (Generate using: openssl rand -base64 32)    
   AUTH_URL=http://localhost:3000/api/auth  
+  AUTH_API_KEY=ANYTHING_SECRET (Just for a little bit more secure authentication)  
     
   GITHUB_ID=GET FROM GITHUB DEVELOPMENT SECTION  
   GITHUB_SECRET=GET FROM GITHUB DEVELOPMENT SECTION  
     
   GOOGLE_ID=GET FROM GOOGLE CLOUD CONSOLE  
   GOOGLE_SECRET=GET FROM GOOGLE CLOUD CONSOLE  
-    
-  NEXT_PUBLIC_SERVICE_ID=SETUP ON EMAILJS  
-  NEXT_PUBLIC_TEMPLATE_ID=SETUP ON EMAILJS  
-  NEXT_PUBLIC_USER_ID=SETUP ON EMAILJS  
   
   DOMAIN=http://localhost:3000  
 
-9. **Run the development server:**  
+8. Next step would be getting you Resend API, register and get API key.
+   RESEND_API_KEY=re_YOUR_KEY
+
+9. Last but not least, to schedule deadline emails, set up Trigger.dev Account and get your API keys.
+  TRIGGER_API_KEY=tr_dev_YOUR_KEY  
+  TRIGGER_API_URL=https://api.trigger.dev  
+  NEXT_PUBLIC_TRIGGER_PUBLIC_API_KEY=pk_dev__YOUR_KEY  
+
+10. **Run the development server:**  
    npm run dev  
 
-Visit http://localhost:3000 in your web browser to interact with the blog website.    
+Visit http://localhost:3000 in your web browser to interact with the Tasker website.    
 
 NOTE: if any problem with getting id or secret keys, connect with me, I'll be glad to help.
 
-## Usage
+## Usage and Features  
 
-**Sign Up/Login:**
-Users can sign up or log in using Github, Google, or Custom Credentials to the platform to create and manage their blog posts.
+**User Authentication:**  
+Sign up or log in using GitHub, Google, or custom credentials to access the task manager platform securely.  
 
-**Create Blog Posts:**
-Authenticated users can create and publish their blog posts, sharing their content with the community.
+**Task CRUD Operations:**  
+Create new tasks, update task details, mark tasks as completed, and delete tasks as needed. Manage your tasks effortlessly.  
 
-**View Others' Posts:**
-Users can explore and read blog posts created by others, fostering a sense of community and knowledge sharing.
+**Task Filtering:**  
+Easily filter tasks based on priority levels, due dates, status (completed or pending), and other relevant criteria. Stay organized and focused.  
 
-**Admin Panel**
-There will be a separate Admin Panel which only Admin can access where he can make Create/Delete Users/Posts.
+**Responsive Design:**  
+Enjoy a seamless user experience across various devices and screen sizes. The application is designed to be visually appealing and functional on desktops, tablets, and mobile devices.  
+
+**Task Categories:**  
+Categorize your tasks for better organization. Whether it's personal, work-related, or for shopping, assign categories to tasks to streamline your to-do list.  
+
+**Task Assignment:**  
+Collaborate efficiently by assigning tasks to other users. Keep everyone on the same page and enhance teamwork.  
+
+**Task Reminders:**  
+Set reminders for upcoming tasks to ensure you never miss a deadline. Receive timely notifications to stay on top of your schedule.  
+
+**Task Search:**  
+Easily find specific tasks by using the search feature. Search by title or description to quickly locate the information you need.  
+
+**Admin Panel:**  
+Exclusive admin access to manage users and posts. The admin can create and delete users, as well as oversee the task management system.  
+
 
 ## Contributing
-If you have suggestions, find bugs, or want to contribute to the project, feel free to open an issue or create a pull request. Your contributions are valuable and appreciated!
+Thank you for considering contributing to our Task Manager App! Contributions are highly valued and can come in various forms. Here's how you can get involved:  
 
+Bug Reports, Feature Requests, Code Contributions, Testing, Documentation
 
