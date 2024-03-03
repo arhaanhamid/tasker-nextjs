@@ -12,7 +12,7 @@ client.defineJob({
   //   // }),
   // }),
   trigger: cronTrigger({
-    cron: "00 8 * * 1",
+    cron: "0 8 * * 1-5",
   }),
   run: async (payload, io, ctx) => {
     await io.runTask(
