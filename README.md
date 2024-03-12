@@ -35,7 +35,7 @@ Get the project up and running on your local machine with these steps:
 7. **Setup Providers:**  
    You will have to manually setup providers with OAuth accessibility like Google/Github. You'll need Provider Secret and ID.  
    Your .env file should look like something like this  
-   MONGO_URI=mongodb+srv://joyboy:joyboy1011@cluster0.qsqjfij.mongodb.net/blogdb2?retryWrites=true&w=majority  
+   MONGODB_URI=your-mongodb-connection-url  
 
   AUTH_SECRET=RANDOM_UNIQUE_SECRET (Generate using: openssl rand -base64 32)    
   AUTH_URL=http://localhost:3000/api/auth  
@@ -91,7 +91,7 @@ Set reminders for upcoming tasks to ensure you never miss a deadline. Receive ti
 Easily find specific tasks by using the search feature. Search by title or description to quickly locate the information you need.  
 
 **Admin Panel:**  
-Exclusive admin access to manage users and posts. The admin can create and delete users, as well as oversee the task management system.  
+Exclusive admin access to manage users and tasks. The admin can create and delete users, as well as oversee the task management system.  
 
 
 ## Contributing
